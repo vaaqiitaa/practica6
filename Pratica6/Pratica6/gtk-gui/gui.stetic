@@ -1,0 +1,181 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<stetic-interface>
+  <configuration>
+    <images-root-path>..</images-root-path>
+  </configuration>
+  <import>
+    <widget-library name="../bin/Debug/Pratica6.exe" internal="true" />
+  </import>
+  <widget class="Gtk.Window" id="MainWindow" design-size="400 300">
+    <property name="MemberName" />
+    <property name="Title" translatable="yes">MainWindow</property>
+    <property name="WindowPosition">CenterOnParent</property>
+    <signal name="DeleteEvent" handler="OnDeleteEvent" />
+    <child>
+      <widget class="Gtk.Fixed" id="fixed1">
+        <property name="MemberName" />
+        <property name="HasWindow">False</property>
+        <child>
+          <widget class="Gtk.Entry" id="pro1">
+            <property name="MemberName" />
+            <property name="CanFocus">True</property>
+            <property name="IsEditable">True</property>
+            <property name="InvisibleChar">●</property>
+          </widget>
+          <packing>
+            <property name="X">187</property>
+            <property name="Y">17</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Entry" id="pro2">
+            <property name="MemberName" />
+            <property name="CanFocus">True</property>
+            <property name="IsEditable">True</property>
+            <property name="InvisibleChar">●</property>
+          </widget>
+          <packing>
+            <property name="X">186</property>
+            <property name="Y">49</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Entry" id="pro3">
+            <property name="MemberName" />
+            <property name="CanFocus">True</property>
+            <property name="IsEditable">True</property>
+            <property name="InvisibleChar">●</property>
+          </widget>
+          <packing>
+            <property name="X">187</property>
+            <property name="Y">81</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Entry" id="sub">
+            <property name="MemberName" />
+            <property name="CanFocus">True</property>
+            <property name="IsEditable">True</property>
+            <property name="InvisibleChar">●</property>
+          </widget>
+          <packing>
+            <property name="X">186</property>
+            <property name="Y">145</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Entry" id="iva">
+            <property name="MemberName" />
+            <property name="CanFocus">True</property>
+            <property name="IsEditable">True</property>
+            <property name="InvisibleChar">●</property>
+          </widget>
+          <packing>
+            <property name="X">186</property>
+            <property name="Y">176</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Label" id="label3">
+            <property name="MemberName" />
+            <property name="LabelProp" translatable="yes">Producto 3</property>
+          </widget>
+          <packing>
+            <property name="X">118</property>
+            <property name="Y">85</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Label" id="label2">
+            <property name="MemberName" />
+            <property name="LabelProp" translatable="yes">Producto 2</property>
+          </widget>
+          <packing>
+            <property name="X">117</property>
+            <property name="Y">55</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Label" id="label1">
+            <property name="MemberName" />
+            <property name="LabelProp" translatable="yes">Producto 1</property>
+          </widget>
+          <packing>
+            <property name="X">118</property>
+            <property name="Y">22</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Label" id="label5">
+            <property name="MemberName" />
+            <property name="LabelProp" translatable="yes">Sub Total</property>
+          </widget>
+          <packing>
+            <property name="X">126</property>
+            <property name="Y">149</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Entry" id="total">
+            <property name="MemberName" />
+            <property name="CanFocus">True</property>
+            <property name="IsEditable">True</property>
+            <property name="InvisibleChar">●</property>
+          </widget>
+          <packing>
+            <property name="X">185</property>
+            <property name="Y">208</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Button" id="limpiar">
+            <property name="MemberName" />
+            <property name="CanFocus">True</property>
+            <property name="Type">TextOnly</property>
+            <property name="Label" translatable="yes">Limpiar</property>
+            <property name="UseUnderline">True</property>
+            <signal name="Clicked" handler="OnLimpiarClicked" />
+          </widget>
+          <packing>
+            <property name="X">10</property>
+            <property name="Y">235</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Button" id="factura">
+            <property name="MemberName" />
+            <property name="CanFocus">True</property>
+            <property name="Type">TextOnly</property>
+            <property name="Label" translatable="yes">Facturar</property>
+            <property name="UseUnderline">True</property>
+            <signal name="Clicked" handler="OnFacturaClicked" />
+          </widget>
+          <packing>
+            <property name="X">9</property>
+            <property name="Y">202</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Label" id="label6">
+            <property name="MemberName" />
+            <property name="LabelProp" translatable="yes">I.V.A.</property>
+          </widget>
+          <packing>
+            <property name="X">147</property>
+            <property name="Y">177</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Label" id="label4">
+            <property name="MemberName" />
+            <property name="LabelProp" translatable="yes">Total</property>
+          </widget>
+          <packing>
+            <property name="X">145</property>
+            <property name="Y">212</property>
+          </packing>
+        </child>
+      </widget>
+    </child>
+  </widget>
+</stetic-interface>
